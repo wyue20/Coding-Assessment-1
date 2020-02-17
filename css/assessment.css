@@ -15,12 +15,23 @@ div{
     border: 1px solid black;
 }
 
-@media screen and (min-device-width:800px) {
-   .container{
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
- }
- 
+@media all and (min-width: 800px){
+    
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div:nth-child(odd){
+        border: 1px solid black;
+    }
+}
+
+section{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    text-align: center;
+
+}
  
 
 h1{
